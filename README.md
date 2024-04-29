@@ -1,0 +1,1 @@
+This is a simple CRUD application where clients' information is managed. The backend is built with Laravel, providing API endpoints for creating and retrieving client data, which is stored in a CSV file using the league/csv package. The frontend is developed with React, offering a form for adding clients with validation, and a page to display all clients.
