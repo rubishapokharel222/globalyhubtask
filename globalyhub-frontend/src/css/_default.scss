@@ -1,0 +1,194 @@
+$bg-background: #68bbe3;
+$primary-color: #003060;
+$secondary-color: #68bbe3;
+$content-width: 2560px;
+$red-color: #fb3535;
+$black-color: #1b1b1b;
+$white-color: #ffffff;
+$yellow-color: #df871b;
+$green-color: #044b37;
+$border-radius: 4px;
+$key-color: #080d1aa4;
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+}
+body {
+  background: $white-color;
+  max-width: $content-width;
+  a {
+    text-decoration: none;
+  }
+  margin-left: auto;
+  margin-right: auto;
+  textarea:focus,
+  input:focus,
+  select:focus {
+    outline: none;
+  }
+  & img {
+    object-fit: cover;
+  }
+}
+@keyframes rotationAnimation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+.primary {
+  &-button {
+    font-size: 1rem;
+    font-weight: 400;
+    color: $white-color;
+    background: $primary-color;
+    border: 1px solid $primary-color;
+    padding: 0rem 1rem;
+    width: auto;
+    height: 2.5rem;
+    border-radius: $border-radius;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &:hover {
+      background: $white-color;
+      color: $primary-color;
+      transition: 0.5s all linear;
+    }
+  }
+}
+
+.secondary {
+  &-button {
+    font-size: 1rem;
+    font-weight: 400;
+    color: $black-color;
+    background: #ddd;
+    border: 1px solid #ddd;
+    padding: 0rem 1rem;
+    width: auto;
+    height: 2.5rem;
+    border-radius: $border-radius;
+    &:hover {
+      background: $white-color;
+      color: $primary-color;
+      transition: 0.5s all linear;
+    }
+  }
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+label {
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.3rem;
+  color: $black-color;
+}
+input[type="password"],
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="date"],
+textarea {
+  width: 100%;
+  display: inline-block;
+  background: $white-color;
+  border: 0.5px solid $black-color;
+  border-radius: $border-radius;
+  height: max-content;
+  font-size: 1rem;
+  margin: 0.5rem 0rem;
+  padding: 1rem;
+  resize: none;
+  &:focus {
+    border: 0.5px solid $primary-color;
+  }
+}
+.passwordbutton {
+  position: relative;
+  &-button {
+    position: absolute;
+    right: 3%;
+    top: 40%;
+    height: max-content;
+    overflow: hidden;
+    background: none;
+    border: none;
+    cursor: pointer;
+    & i {
+      font-size: 1.1rem;
+      color: $black-color;
+      font-weight: 300 !important;
+    }
+  }
+}
+
+.submitbtn {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-top: 0.5rem;
+}
+
+.formselect {
+  width: 100%;
+  display: inline-block;
+  background: $white-color;
+  border: 0.5px solid $black-color;
+  border-radius: $border-radius;
+  height: max-content;
+  font-size: 1rem;
+  margin: 0.5rem 0rem;
+  padding: 1rem;
+  &:focus {
+    border: 0.5px solid $primary-color;
+  }
+}
+
+.addeditclient {
+    background: $white-color;
+    box-shadow: 8px 8px 8px 8px #eaeaea;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    text-align: left;
+    &-clienttext1 {
+      font-size: 1.2rem;
+      color: $primary-color;
+      line-height: 3rem;
+      font-weight: 600;
+      text-align: center;
+    }
+    &-clienttext2 {
+      font-size: 1rem;
+      text-align: center;
+      color: $black-color;
+      /* line-height: 2rem; */
+      font-weight: 400;
+    }
+    &-clientform {
+      padding: 1rem;
+      display: flex;
+      gap: 2.5rem;
+      &--left {
+        flex: 1;
+      }
+      &--right {
+        flex: 1;
+      }
+    }
+  }
+  
+  input[type="radio"] {
+    accent-color: $primary-color;
+  }
